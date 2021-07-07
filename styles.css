@@ -196,7 +196,7 @@ header img {
 
 /* my-work styles */
 .my-work h2 {
-  background-image: url(./assets/Untitled-1.png);
+  background-image: url(./assets/my-work-blob.png);
   background-repeat: no-repeat;
   color: #fff;
   padding: 2px 0 8px 25px;
@@ -224,7 +224,10 @@ header img {
 .lets-connect {
   background-image: url(./assets/lets-connect-background.png);
   background-size: cover;
-  padding-top: 25px;
+  background-position: right bottom;
+  padding-top: 30px;
+  margin-top: 30px;
+  position: relative;
 }
 
 .lets-connect h2 {
@@ -245,7 +248,113 @@ header img {
   white-space: nowrap;
 }
 
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
 
+.profiles {
+  position: absolute;
+  top: 83px;
+  right: 15px;
+}
+
+.profiles li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+.profiles li a:hover,
+.profiles li a:focus {
+  color: #888a63;
+}
+
+.profiles li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.profiles ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 65%;
+  opacity: 0.8;
+}
+
+:placeholder-shown {
+  letter-spacing: 1px;
+  color: #333;
+  padding: 15px;
+}
+
+.name-email {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-email #name {
+  width: 48%;
+  padding: 5px 10px;
+  border-style: none;
+}
+
+.name-email #email {
+  width: 48%;
+  padding: 5px 10px;
+  border-style: none;
+}
+
+.message-button {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+button {
+  margin: 20px 0 30px;
+  padding: 5px;
+  border-style: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+button:hover,
+button:focus {
+  background-color: #888a63;
+  color: #fff;
+  opacity: 1;
+}
+
+/* footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  line-height: 27px;
+}
 
 /* media queries */
 @media (max-width: 940px) {

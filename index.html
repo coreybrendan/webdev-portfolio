@@ -26,7 +26,7 @@
     <section class="about wrapper">
       <div class="about-text">
         <h2 tabindex="0">About Me</h2>
-        <p>As a recent grad of Juno College, I have uncovered a passion for creating fresh and modern websites that inspire engaging experiences that are accessible for all users. I have an eye for detail and treat my code like it is my product — following best practices while keeping it clean and efficient.</p>
+        <p>As a recent Juno grad, I have uncovered a passion for creating fresh+modern sites that inspire an engaging, accessible experience. I have an eye for detail and treat my code like it is my product — following best practices while keeping it clean & efficient.</p>
         <p>A background in People & Culture left me with stellar skills as a generalist who can quickly adapt with emerging priorities. As a thoughtful storyteller, I'm at my best when solving complex problems in team-based environments where creative solutions and consensus-building are valued.</p>
         <p>While my text editor sleeps, you'll likely find me designing interior spaces, at a park with a coffee-in-hand, or exploring the city on my fixed gear.</p>
       </div>
@@ -45,13 +45,9 @@
           <li class="icon-grid"><i class="devicon-jquery-plain"></i><p>jQuery</p></li>
           <li class="icon-grid"><i class="devicon-react-original"></i><p>React</p></li>
           <li class="icon-grid"><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
-          <li class="icon-grid"><i class="devicon-vscode-plain"></i>
-            <p>VSCode</p>
-          </li>
+          <li class="icon-grid"><i class="devicon-vscode-plain"></i><p>VSCode</p></li>
           <li class="icon-grid"><i class="devicon-git-plain"></i><p>Git+Github</p></li>
-          <li class="icon-grid"><i class="fas fa-universal-access"></i>
-          <p>Accessibility</p>
-          </li>
+          <li class="icon-grid"><i class="fas fa-universal-access"></i><p>Accessibility</p></li>
           <li class="icon-grid"><i class="fas fa-mobile"></i><p>Responsive Design</p></li>
           <li class="icon-grid"><i class="devicon-photoshop-plain"></i><p>Photoshop</p></li>
         </ul>
@@ -76,35 +72,40 @@
     <section class="lets-connect">
       <div class="wrapper">
         <h2 tabindex="0">Let's Connect</h2>
-        <h3>Dev Profiles</h3>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
-          <li>Twitter</li>
-          <li>Email</li>
-        </ul>
-        <form action="submit" name="contact-form">
-          <div class="name-email">
-            <label for="name" class="visually-hidden">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name">
-
-            <label for="email" class="visually-hidden">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email Address">
+        <div class="form-container">
+          <form name="contact-form" method="POST" data-netlify="true">
+            <div class="name-email">
+              <label for="name" class="visually-hidden">Name</label>
+              <input type="text" id="name" name="name" placeholder="*Your name">
+              
+              <label for="email" class="visually-hidden">Email</label>
+              <input type="email" id="email" name="email" placeholder="*Your email">
+            </div>
+            
+            <div class="message-button">
+              <label for="message" class="visually-hidden">Your Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="What's on your mind? 🔥 Hot tip 👉 I'm always down for a coffee chat!"></textarea>
+              
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <div class="profiles">
+            <ul>
+              <li><a title="Find me on LinkedIn" href="https://www.linkedin.com/in/coreysheldrick/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a title="Check out my Github" href="https://github.com/coreybrendan"><i class="fab fa-github"></i></i></a></li>
+              <li><a title="Follow me on Tweeters" href="https://twitter.com/coreybrendan"><i class="fab fa-twitter"></i></a></li>
+              <li><a title="Send me an email" href="mailto:coreybrendan@me.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
           </div>
-
-          <div class="message-button">
-            <label for="message" class="visually-hidden">Your Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <button type="submit">Submit</button>
-          </div>
-
-        </form>
-      </div>
+        </div> <!-- /.content-container -->
+      </div> <!-- /.wrapper -->
     </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <p>Designed + Developed with ❤️</p>
+    <p>by Corey Sheldrick</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
