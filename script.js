@@ -57,3 +57,28 @@ const toggleSanctuaryDetails = () => {
   const element = document.getElementsByClassName('hide-details');
   element[3].classList.toggle('show-details');
 }
+
+// dark-mode toggle
+const darkMode = () => {
+  const element = document.body;
+  element.classList.toggle('dark-mode');
+}
+
+const logoSwitch = document.querySelector('.logo');
+
+logoSwitch.addEventListener('click', handleUserClick);
+
+function handleUserClick() {
+  console.log('A click event!');
+  darkMode();
+}
+
+// scroll to about section
+const chevron = document.querySelector('.fa-chevron-down');
+
+chevron.addEventListener('click', handleChevronClick);
+
+function handleChevronClick() {
+  const location = document.querySelector('.about');
+  location.scrollIntoView();
+}

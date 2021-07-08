@@ -49,6 +49,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
 
 .hero-text {
@@ -93,6 +94,23 @@ header img {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   cursor: pointer;
+}
+
+header i {
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  bottom: 5%;
+  left: 48.65%;
+  cursor: pointer;
+  animation: bounce 1.5s linear infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  30% {transform: translateY(-8px);}
+  50% {transform: translateY(0);}
+  100% {transform: translateY(0);}
 }
 
 /* about styles */
@@ -236,6 +254,7 @@ header img {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
+  letter-spacing: 1px;
   display: block;
   padding-bottom: 20px
 }
@@ -387,6 +406,26 @@ button:focus {
   background-color: #888a63;
   color: #fff;
   opacity: 1;
+}
+/* end lets-connect styles */
+
+/* dark-mode styles */
+.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode p,
+.dark-mode .icon-grid i,
+.dark-mode .icon-grid p,
+.dark-mode .site-links a {
+  color: #fff;
+}
+
+.dark-mode .about-text h2,
+.dark-mode .tech-stack h2,
+.dark-mode .my-work h2,
+.dark-mode .lets-connect h2 {
+  color: #333;
 }
 
 /* footer styles */
