@@ -212,20 +212,57 @@ header img {
 
 .screens-container li {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .screens-container li img {
   cursor: pointer;
 }
 
+/* toggle details styles */
 .hide-details {
   display: none;
 }
 
 .show-details {
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
+
+.show-details span {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: block;
+  padding-bottom: 20px
+}
+
+.show-details .site-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.show-details .site-links a:hover,
+.show-details .site-links a:focus {
+  background-image: linear-gradient(to right, #deb647 100%, #fff 0);
+  background-position: 0 85%;
+  background-repeat: repeat-x;
+  background-size: 100% 20%;
+  width: min-content;
+  transition: all 0.3s ease-out;
+}
+
+.show-details .site-links {
+  padding-top: 20px;
+}
+
+.show-details p {
+  line-height: 28px;
+}
+/* end toggle details styles */
 /* end my-work styles */
 
 /* lets-connect styles */
