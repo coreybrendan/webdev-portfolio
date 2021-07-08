@@ -1,24 +1,25 @@
-const tattoo = document.querySelector('.tattoo-screen');
-const bootcampDiaries = document.querySelector('.bootcamp-diaries-screen');
-const wordNerds = document.querySelector('.word-nerds-screen');
-const sanctuary = document.querySelector('.sanctuary-screen');
+// find the img with class of .tattoo-screen
+const projectScreen = document.querySelector('.tattoo-screen');
 
+// add event listener
+projectScreen.addEventListener('click', handleClick);
+
+// click event
 function handleClick() {
-  this.style.display = 'inline-block';
+  console.log('I have been clicked!!');
+  toggleProjectDetails();
 }
 
-tattoo.addEventListener('click', function() {
-  console.log('Whoop! A click has been registered on tattoo screen');
-});
+// toggle class name from .hide-details to .show-details
+const toggleProjectDetails = () => {
+  const element = document.getElementsByClassName('hide-details');
+  element[0].classList.toggle('show-details');
+  // console.log(element[0].classList.toggle);
+}
 
-bootcampDiaries.addEventListener('click', function () {
-  console.log('Whoop! A click has been registered on bootcamp diaries screen');
-});
 
-wordNerds.addEventListener('click', function () {
-  console.log('Whoop! A click has been registered on word nerds screen');
-});
 
-sanctuary.addEventListener('click', function () {
-  console.log('Whoop! A click has been registered on sanctuary screen');
-});
+// document.querySelector('.tattoo-screen').onClick = function() {
+//   const element = document.getElementsByClassName('hide-details');
+//   element.classList.toggle('show-details');
+// }

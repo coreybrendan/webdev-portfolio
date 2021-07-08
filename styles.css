@@ -218,6 +218,14 @@ header img {
 .screens-container li img {
   cursor: pointer;
 }
+
+.hide-details {
+  display: none;
+}
+
+.show-details {
+  display: block;
+}
 /* end my-work styles */
 
 /* lets-connect styles */
