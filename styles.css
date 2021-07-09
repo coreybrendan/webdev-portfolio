@@ -559,6 +559,10 @@ footer p {
   .icon-set {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .icon-grid p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 320px) {
