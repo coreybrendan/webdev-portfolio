@@ -4,7 +4,6 @@ const tattooProject = document.querySelector('.tattoo-screen');
 tattooProject.addEventListener('click', handleTattooClick);
 
 function handleTattooClick() {
-  console.log('I have been clicked!!');
   toggleTattooDetails();
 }
 
@@ -19,7 +18,6 @@ const diariesProject = document.querySelector('.bootcamp-diaries-screen');
 diariesProject.addEventListener('click', handleDiariesClick);
 
 function handleDiariesClick() {
-  console.log('I have been clicked!!');
   toggleDiariesDetails();
 }
 
@@ -34,7 +32,6 @@ const nerdsProject = document.querySelector('.word-nerds-screen');
 nerdsProject.addEventListener('click', handleNerdsClick);
 
 function handleNerdsClick() {
-  console.log('I have been clicked!!');
   toggleNerdsDetails();
 }
 
@@ -49,7 +46,6 @@ const sanctuaryProject = document.querySelector('.sanctuary-screen');
 sanctuaryProject.addEventListener('click', handleSanctuaryClick);
 
 function handleSanctuaryClick() {
-  console.log('I have been clicked!!');
   toggleSanctuaryDetails();
 }
 
@@ -69,7 +65,6 @@ const logoSwitch = document.querySelector('.logo');
 logoSwitch.addEventListener('click', handleUserClick);
 
 function handleUserClick() {
-  console.log('A click event!');
   darkMode();
 }
 

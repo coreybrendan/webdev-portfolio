@@ -445,16 +445,162 @@ footer p {
   header {
     background-image: url(./assets/laptop-background.png);
   }
+
+  .wrapper {
+    width: 85%;
+  }
+
+  .icon-set {
+  grid-template-rows: 125px 125px 125px;
+  grid-template-columns: repeat(4, 1fr);
+  }
+
+  .screens-container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-left: 0;
+  }
+
+  form {
+    width: 75%;
+  }
 }
 
 @media (max-width: 768px) {
   header {
     background-image: url(./assets/tablet-background.png);
   }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 95%;
+    margin-right: 0;
+  }
+
+  .about-text p {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+
+  form {
+    width: 85%;
+  }
 }
 
 @media (max-width: 480px) {
   header {
     background-image: url(./assets/mobile-background.png);
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .about-text h2 {
+    margin-left: 0;
+  }
+
+  .about-text p {
+    text-align: left;
+  }
+
+  .tech-stack h2 {
+    margin-left: 0;
+  }
+
+  .icon-set {
+  grid-template-rows: repeat(4, 125px);
+  grid-template-columns: repeat(3, 135px);
+  padding-left: 0;
+  justify-items: center;
+  }
+
+  .my-work h2 {
+    margin-left: 0;
+  }
+
+  .screens-container li {
+    flex-direction: column;
+  }
+
+  .lets-connect h2 {
+    margin-left: 0;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .profiles {
+    top: 0;
+    right: 0;
+  }
+
+  .profiles li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .about-image {
+    margin: 30px 0;
+  }
+
+  .about-text h2 {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .about-text {
+    margin-bottom: 30px;
+  }
+
+  .tech-stack h2 {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .icon-set {
+  grid-template-rows: repeat(6, 125px);
+  grid-template-columns: repeat(2, 135px);
+  }
+
+  .my-work h2 {
+    margin: 0 auto;
+    width: 67%;
+  }
+
+  .show-details span {
+    text-align: center;
+  }
+
+  .profiles {
+    top: 463px;
+    right: 80px;
+  }
+
+  .profiles ul {
+    flex-direction: row;
+  }
+
+  .profiles li a {
+    font-size: 1rem;
+  }
+
+  .lets-connect button {
+    margin-bottom: 50px;
   }
 }
