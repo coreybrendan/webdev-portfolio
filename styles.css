@@ -514,6 +514,7 @@ footer p {
 
   .tech-stack h2 {
     margin-left: 0;
+    padding: 2px 0 8px 22px;
   }
 
   .icon-set {
@@ -531,8 +532,13 @@ footer p {
     flex-direction: column;
   }
 
+  .show-details span {
+    text-align: center;
+  }
+
   .lets-connect h2 {
     margin-left: 0;
+    padding: 2px 0 8px 23px;
   }
 
   form {
@@ -541,11 +547,11 @@ footer p {
 
   .profiles {
     top: 0;
-    right: 0;
+    right: 5px;
   }
 
   .profiles li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -581,10 +587,6 @@ footer p {
   .my-work h2 {
     margin: 0 auto;
     width: 67%;
-  }
-
-  .show-details span {
-    text-align: center;
   }
 
   .profiles {
