@@ -555,6 +555,12 @@ footer p {
   }
 }
 
+@media (max-width: 435px) {
+  .icon-set {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 320px) {
   .about {
     flex-direction: column-reverse;
