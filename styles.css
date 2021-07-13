@@ -441,6 +441,15 @@ footer p {
 }
 
 /* media queries */
+@media (max-width: 1200px) {
+  .screens-container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 940px) {
   header {
     background-image: url(./assets/laptop-background.png);
@@ -453,13 +462,6 @@ footer p {
   .icon-set {
   grid-template-rows: 125px 125px 125px;
   grid-template-columns: repeat(4, 1fr);
-  }
-
-  .screens-container {
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding-left: 0;
   }
 
   form {
@@ -493,6 +495,54 @@ footer p {
   form {
     width: 85%;
   }
+
+  .name-email {
+  flex-direction: column;
+  }
+
+  .name-email #name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .name-email #email {
+    width: 100%;
+  }
+
+  .profiles {
+    top: 20px;
+    right: 10px;
+  }
+
+  .profiles li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .icon-set {
+    grid-template-rows: repeat(4, 125px);
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+    justify-items: center;
+    }
+
+  .my-work h2 {
+    margin-left: 0;
+  }
+
+  .screens-container li {
+    flex-direction: column;
+  }
+
+  .show-details {
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  .show-details span {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -517,23 +567,8 @@ footer p {
     padding: 2px 0 8px 22px;
   }
 
-  .icon-set {
-  grid-template-rows: repeat(4, 125px);
-  grid-template-columns: repeat(3, 135px);
-  padding-left: 0;
-  justify-items: center;
-  }
-
-  .my-work h2 {
-    margin-left: 0;
-  }
-
-  .screens-container li {
-    flex-direction: column;
-  }
-
-  .show-details span {
-    text-align: center;
+  .show-details {
+    width: 85%;
   }
 
   .lets-connect h2 {
@@ -544,15 +579,6 @@ footer p {
   form {
     width: 100%;
   }
-
-  .profiles {
-    top: 0;
-    right: 5px;
-  }
-
-  .profiles li a {
-    font-size: 1.2rem;
-  }
 }
 
 @media (max-width: 435px) {
@@ -562,6 +588,23 @@ footer p {
 
   .icon-grid p {
     font-size: 0.9rem;
+  }
+
+  .profiles {
+    top: 506px;
+    right: 8px;
+  }
+
+  .profiles ul {
+    flex-direction: row;
+  }
+
+  .profiles li a {
+    font-size: 1rem;
+  }
+
+  .lets-connect button {
+    margin-bottom: 50px;
   }
 }
 
@@ -597,19 +640,6 @@ footer p {
   .my-work h2 {
     margin: 0 auto;
     width: 67%;
-  }
-
-  .profiles {
-    top: 463px;
-    right: 80px;
-  }
-
-  .profiles ul {
-    flex-direction: row;
-  }
-
-  .profiles li a {
-    font-size: 1rem;
   }
 
   .lets-connect button {
